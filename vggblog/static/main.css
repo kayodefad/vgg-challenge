@@ -21,9 +21,10 @@ body {
 
   .site-header .navbar-brand {
     font-family: 'Cookie', cursive;
+    font-family: 'Courier New', Courier, monospace;
     /* text-transform: uppercase; */
     font-style: italic;
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 
   .site-header .navbar-nav .nav-link {
@@ -59,31 +60,32 @@ body {
   }
 
   .showcase-content .welcome {
-    color: rgb(31, 78, 133);
-    font-size: 4rem;
-    font-family: 'Cookie', cursive;
+    color: #fff;
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     line-height: 1;
   }
 
   .showcase-content button {
-    padding: 10px 30px;
-    background: #fff;
-    border-radius: 5px;
-    margin-top: 15px;
+    padding: 7px 20px;
+    background: rgb(71, 68, 68);
+    border-radius: 10px;
+    margin-top: 20px;
     font-size: 1.2rem;
-    color: rgb(31, 78, 133);
+    /* color: #000; */
     transition: all 0.5s;
   }
 
   .showcase-content button:hover {
     background: rgb(31, 78, 133);
-    border-radius: 5px;
+    /* border-radius: 5px; */
     color: #fff;
   }
 
   .showcase-content button a {
     text-decoration: none;
+    color: #fff;
   }
 
   .showcase-content button a:hover {

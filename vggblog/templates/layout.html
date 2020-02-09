@@ -31,7 +31,7 @@
   <body>
     <!-- Navigation Bar -->
     <header class="site-header">
-      <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container">
           <a class="navbar-brand mr-4" href="{{ url_for('home') }}">VGGBlog</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,18 +39,18 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarToggle">
             <div class="navbar-nav mr-auto">
-              <a class="nav-item nav-link text-dark" href="{{ url_for('home') }}">Home</a>
-              <a class="nav-item nav-link text-dark" href="{{ url_for('about') }}">About</a>
+              <a class="nav-item nav-link" href="{{ url_for('home') }}">Home</a>
+              <a class="nav-item nav-link" href="{{ url_for('about') }}">About</a>
             </div>
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
               {% if current_user.is_authenticated %}
-              <a class="nav-item nav-link text-dark" href="{{ url_for('new_post') }}">New Post <i class="fas fa-plus-square"></i></a>
-              <a style="text-transform: lowercase;" class="nav-item nav-link text-dark" href="{{ url_for('account') }}">{{current_user.username}} <i class="fas fa-user"></i></a s>
-              <a class="nav-item nav-link text-dark" href="{{ url_for('logout') }}">Sign Out <i class="fas fa-sign-out-alt"></i></a>
+              <a class="nav-item nav-link" href="{{ url_for('new_post') }}">New Post <i class="fas fa-plus-square"></i></a>
+              <a style="text-transform: lowercase;" class="nav-item nav-link" href="{{ url_for('account') }}">{{current_user.username}} <i class="fas fa-user"></i></a s>
+              <a class="nav-item nav-link" href="{{ url_for('logout') }}">Sign Out <i class="fas fa-sign-out-alt"></i></a>
               {% else %}
-              <a class="nav-item nav-link text-dark" href="{{ url_for('login') }}">Sign In <i class="fas fa-sign-in-alt"></i></a>
-              <a class="nav-item nav-link text-dark" href="{{ url_for('register') }}">Become a Member <i class="fas fa-hand-point-right"></i></a>
+              <a class="nav-item nav-link" href="{{ url_for('login') }}">Sign In <i class="fas fa-sign-in-alt"></i></a>
+              <a class="nav-item nav-link" href="{{ url_for('register') }}">Become a Member <i class="fas fa-hand-point-right"></i></a>
               {% endif %}
             </div>
           </div>
