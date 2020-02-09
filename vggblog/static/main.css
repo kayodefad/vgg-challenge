@@ -22,11 +22,6 @@ body {
     top: 0;
   }
 
-  nav {
-    background: rgb(62, 63, 63);
-    color: #fff;
-  }
-
   .site-header .navbar-brand {
     font-family: 'Cookie', cursive;
     text-transform: uppercase;
@@ -82,6 +77,15 @@ body {
   .showcase-content button:hover {
     background: rgb(31, 78, 133);
     border-radius: 5px;
+    color: #fff;
+  }
+
+  .showcase-content button a {
+    text-decoration: none;
+  }
+
+  .showcase-content button a:hover {
+    text-decoration: none;
     color: #fff;
   }
 

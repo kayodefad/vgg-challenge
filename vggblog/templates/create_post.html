@@ -14,14 +14,14 @@
 
            <!-- Check for title errors -->
           {% if form.title.errors %}
-           {{form.title(class="form-control form-control-lg is-invalid")}}
+           {{form.title(class="form-control form-control is-invalid")}}
            <div class="invalid-feedback">
              {% for error in form.title.errors %}
               <span>{{error}}</span>
              {% endfor %}
            </div>
            {% else %}
-            {{form.title(class="form-control form-control-lg")}}
+            {{form.title(class="form-control form-control")}}
           {% endif %}
         </div>
 
@@ -31,14 +31,14 @@
 
            <!-- Check for content errors -->
            {% if form.content.errors %}
-           {{form.content(class="form-control form-control-lg is-invalid")}}
+           {{form.content(class="form-control form-control is-invalid")}}
            <div class="invalid-feedback">
              {% for error in form.content.errors %}
               <span>{{error}}</span>
              {% endfor %}
            </div>
            {% else %}
-            {{form.content(class="form-control form-control-lg")}}
+            {{form.content(class="form-control form-control")}}
           {% endif %}
         </div>
       </fieldset>

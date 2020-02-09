@@ -21,14 +21,14 @@
     
               <!-- Check for username errors -->
               {% if form.username.errors %}
-               {{form.username(class="form-control form-control-lg is-invalid")}}
+               {{form.username(class="form-control form-control is-invalid")}}
                <div class="invalid-feedback">
                  {% for error in form.username.errors %}
                   <span>{{error}}</span>
                  {% endfor %}
                </div>
                {% else %}
-                {{form.username(class="form-control form-control-lg")}}
+                {{form.username(class="form-control form-control")}}
               {% endif %}
             </div>
     
@@ -38,14 +38,14 @@
     
                <!-- Check for email errors -->
               {% if form.email.errors %}
-               {{form.email(class="form-control form-control-lg is-invalid")}}
+               {{form.email(class="form-control form-control is-invalid")}}
                <div class="invalid-feedback">
                  {% for error in form.email.errors %}
                   <span>{{error}}</span>
                  {% endfor %}
                </div>
                {% else %}
-                {{form.email(class="form-control form-control-lg")}}
+                {{form.email(class="form-control form-control")}}
               {% endif %}
             </div>
             <!-- Profile Image Update -->
