@@ -46,7 +46,7 @@
             <div class="navbar-nav">
               {% if current_user.is_authenticated %}
               <a class="nav-item nav-link" href="{{ url_for('new_post') }}">New Post <i class="fas fa-plus-square"></i></a>
-              <a class="nav-item nav-link" href="{{ url_for('account') }}">Account <i class="fas fa-user"></i></a>
+              <a style="text-transform: lowercase;" class="nav-item nav-link" href="{{ url_for('account') }}">{{current_user.username}} <i class="fas fa-user"></i></a s>
               <a class="nav-item nav-link" href="{{ url_for('logout') }}">Logout <i class="fas fa-sign-out-alt"></i></a>
               {% else %}
               <a class="nav-item nav-link" href="{{ url_for('login') }}">Login <i class="fas fa-sign-in-alt"></i></a>
