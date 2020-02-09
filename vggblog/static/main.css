@@ -2,6 +2,7 @@ body {
     background: #fafafa;
     color: #333333;
     margin-top: 5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -16,6 +17,13 @@ body {
     background-color: #5f788a;
   }
   
+  .site-header .navbar-brand {
+    font-family: 'Cookie', cursive;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 2rem;
+  }
+
   .site-header .navbar-nav .nav-link {
     color: #cbd5db;
   }
