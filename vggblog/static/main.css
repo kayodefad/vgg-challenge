@@ -1,7 +1,6 @@
 body {
-    background: #fafafa;
-    color: #333333;
-    /* margin-top: 5rem; */
+    /* background: #fafafa; */
+    /* color: #333333; */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   
@@ -12,27 +11,24 @@ body {
   ul {
     margin: 0;
   }
-  
-  .bg-steel {
-    background-color: #5f788a;
-  }
 
   header {
     position: sticky;
     top: 0;
     z-index: 50;
+    box-shadow: 2px 2px 5px rgb(161, 163, 163);
   }
 
   .site-header .navbar-brand {
     font-family: 'Cookie', cursive;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-style: italic;
     font-size: 2rem;
   }
 
   .site-header .navbar-nav .nav-link {
     color: #cbd5db;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     margin: 0 10px;
   }
   
@@ -98,17 +94,24 @@ body {
   main {
     margin-top: 2.5rem;
   }
+
+  .content-section .img-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .content-section .username {
+    margin-bottom: 1px;
+  }
   
   .content-section {
-    background: #ffffff;
-    padding: 25px 20px;
-    border: 1px solid #dddddd;
-    border-radius: 3px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #000;
   }
 
   .content-section h3 {
-    margin-top: 15px;
+    margin-top: 30px;
   }
   
   .article-title {
@@ -126,21 +129,20 @@ body {
   }
   
   .article-img {
-    height: 65px;
-    width: 65px;
+    height: 50px;
+    width: 50px;
     margin-right: 16px;
   }
   
   .article-metadata {
-    padding-bottom: 1px;
-    margin-bottom: 4px;
-    border-bottom: 1px solid #e3e3e3
+    display: flex;
+    flex-direction: column;
   }
   
   .article-metadata a:hover {
     color: #333;
     text-decoration: none;
-  }
+  } 
   
   .article-svg {
     width: 25px;
