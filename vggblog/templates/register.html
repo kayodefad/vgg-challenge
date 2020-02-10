@@ -25,23 +25,6 @@
           {% endif %}
         </div>
 
-        <!-- Email -->
-        <div class="form-group">
-          {{form.email.label(class="form-control-label")}}
-
-           <!-- Check for email errors -->
-          {% if form.email.errors %}
-           {{form.email(class="form-control form-control is-invalid")}}
-           <div class="invalid-feedback">
-             {% for error in form.email.errors %}
-              <span>{{error}}</span>
-             {% endfor %}
-           </div>
-           {% else %}
-            {{form.email(class="form-control form-control")}}
-          {% endif %}
-        </div>
-
         <!-- Password -->
         <div class="form-group">
           {{form.password.label(class="form-control-label")}}

@@ -97,19 +97,22 @@ body {
     margin-top: 2.5rem;
   }
 
-  .content-section .img-container {
+  .article-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .content-section .info-container {
     display: flex;
     align-items: center;
   }
 
-  .content-section .username {
-    margin-bottom: 1px;
-  }
-  
-  .content-section {
+  .post {
     margin-bottom: 40px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #000;
+    /* padding-bottom: 15px; */
+    box-shadow: 2px 2px 5px rgb(161, 163, 163);
+    padding: 20px;
   }
 
   .content-section h3 {
