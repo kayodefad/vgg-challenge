@@ -7,6 +7,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='profile_pics/favicon.ico') }}">
+
     <script src="https://kit.fontawesome.com/6450fc700a.js" crossorigin="anonymous"></script>
 
     <!-- Fonts -->
@@ -47,7 +49,7 @@
               {% if current_user.is_authenticated %}
               <a class="nav-item nav-link" href="{{ url_for('new_post') }}">New Post <i class="fas fa-plus-square"></i></a>
               <a class="nav-item nav-link" href="{{ url_for('account') }}">Hi, {{current_user.username}} <i class="fas fa-user"></i></a>
-              <a class="nav-item nav-link" href="{{ url_for('logout') }}">Logout <i class="fas fa-sign-out-alt"></i></a>
+              <a class="nav-item nav-link" href="{{ url_for('logout') }}">Sign Out <i class="fas fa-sign-out-alt"></i></a>
               {% else %}
               <a class="nav-item nav-link" href="{{ url_for('login') }}">Login <i class="fas fa-sign-in-alt"></i></a>
               <a class="nav-item nav-link" href="{{ url_for('register') }}">Become a Member <i class="fas fa-hand-point-right"></i></a>
